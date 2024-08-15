@@ -38,3 +38,6 @@
 #### 特别鸣谢
 [海狐外卖多商户跑腿O2O商城系统-多方分账 UI精美 架构领先](https://ext.dcloud.net.cn/plugin?id=17472)
 
+
+### 合作加盟
+合作请联系V：alliumu7110
