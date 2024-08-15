@@ -36,5 +36,5 @@
 
 
 #### 特别鸣谢
-[海狐外卖1.0版本模板前端开源](https://ext.dcloud.net.cn/plugin?id=17514)
+[海狐外卖多商户跑腿O2O商城系统-多方分账 UI精美 架构领先](https://ext.dcloud.net.cn/plugin?id=17472)
 
