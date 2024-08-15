@@ -33,3 +33,8 @@
 用户端演示地址 ： 当前处于还开发阶段
 <img src="https://github.com/user-attachments/assets/0cc00022-f086-4696-aaa7-dfec7490dcf7" width="300px">
 或者关注公众号《金之鱼》 不定期会发放新版本体验
+
+
+#### 特别鸣谢
+海狐UI（推荐）
+
