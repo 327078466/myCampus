@@ -36,5 +36,5 @@
 
 
 #### 特别鸣谢
-海狐UI（推荐）
+[海狐外卖1.0版本模板前端开源](https://ext.dcloud.net.cn/plugin?id=17514)
 
