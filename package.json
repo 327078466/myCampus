@@ -1,0 +1,46 @@
+{
+  "name": "takeout_mp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin npm run dev",
+    "dev:h5": "cross-env UNI_PLATFORM=h5 npm run dev",
+    "build:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin npm run build",
+    "build:h5": "cross-env UNI_PLATFORM=h5 npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "websocket-heartbeat-miniprogram": "^1.0.3"
+  },
+  "uni-app": {
+    "scripts": {
+      "dev": {
+        "title": "微信小程序——开发版",
+        "env": {
+          "ENV_TYPE": "dev",
+          "UNI_PLATFORM": "mp-weixin"
+        }
+      },
+      "test": {
+        "title": "微信小程序——测试版",
+        "env": {
+          "ENV_TYPE": "test",
+          "UNI_PLATFORM": "mp-weixin"
+        }
+      },
+      "pro": {
+        "title": "微信小程序——正式版",
+        "env": {
+          "ENV_TYPE": "pro",
+          "UNI_PLATFORM": "mp-weixin"
+        }
+      }
+    }
+  }
+}

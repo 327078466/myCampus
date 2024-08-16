@@ -1,0 +1,702 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	/* 使容器高度等于视口高度 */
+
+}
+.address {
+  display: block; /* 必须设置为 block 或 inline-block 才能使用 text-overflow */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 超过宽度的内容隐藏 */
+  text-overflow: ellipsis; /* 超过部分用省略号表示 */
+  width: 200rpx;
+  }
+
+.top-section {
+	height: 65rpx;
+	flex: none;
+	display: flex;
+	align-items: center;
+	/* 垂直居中 */
+	justify-content: space-between;
+	/* 左右对齐 */
+	padding: 10px;
+	background-color: #fff;
+}
+.scroll-container{
+	height: 100vh; /* 或设置为适当的高度 */
+	overflow-y: auto; /* 允许垂直滚动 */
+}
+
+.top_left,
+.top_right {
+	display: flex;
+	align-items: center;
+	/* 垂直居中 */
+	justify-content: flex-start;
+	/* 左对齐 */
+	width: 50%;
+	/* 各占一半宽度 */
+}
+
+.bottom-section {
+	flex: 9;
+	/* 占据剩余空间的一半 */
+	background-color: #e8e8e8;
+}
+
+.location_image {
+	width: 40rpx;
+	/* 图片宽度 */
+	height: 40rpx;
+	/* 图片高度 */
+	margin-right: 8rpx;
+	/* 图片与文字之间的间距 */
+}
+
+.arrows_image {
+	width: 25rpx;
+	/* 图片宽度 */
+	height: 25rpx;
+	/* 图片高度 */
+	margin-left: 5rpx;
+	/* 图片与文字之间的间距 */
+}
+
+
+.search-input {
+	width: 100%;
+	height: 45rpx;
+	padding: 0 12rpx;
+	line-height: 40rpx;
+	/* 设置与输入框高度相等的行高，使文本垂直居中 */
+	border-radius: 50rpx;
+	/* 圆角，形成椭圆形 */
+	padding-left: 60rpx;
+	/* 为图标留出空间，确保文本不会重叠 */
+	background-color: #e8e8e8;
+	/* 更亮的背景颜色 */
+	font-size: 10px;
+	box-sizing: border-box;
+	/* 确保 padding 不影响宽度 */
+}
+
+.search-wrapper {
+	position: relative;
+	/* 为绝对定位的图标设置相对定位的父容器 */
+	width: 100%;
+}
+
+.search-icon {
+	position: absolute;
+	left: 20rpx;
+	/* 距离输入框左侧的间距 */
+	top: 55%;
+	transform: translateY(-50%);
+	/* 垂直居中图标 */
+	width: 30rpx;
+	height: 30rpx;
+}
+
+.bottom-item {
+	width: 96%;
+	/* 项目之间的间距 */
+	display: flex;
+	margin-left: 15rpx;
+	justify-content: center;
+	/* 内容水平居中 */
+	align-items: center;
+	/* 内容垂直居中 */
+	margin-bottom: 15rpx;
+}
+
+.notice-container {
+	width: 100%;
+	/* 根据需要调整宽度 */
+	height: 70rpx;
+	/* 根据需要调整高度 */
+	border-radius: 15rpx;
+	/* 圆角，形成椭圆形 */
+	display: flex;
+	justify-content: flex-start;
+	/* 左对齐内容 */
+	align-items: center;
+	/* 内容垂直居中 */
+	background-color: #fff;
+	/* 背景颜色，调整为需要的颜色 */
+	margin-top: 10rpx;
+}
+
+
+.left-part {
+	display: flex;
+	align-items: center;
+	/* 垂直居中 */
+}
+
+.left-image {
+	margin-left: 15rpx;
+	width: 150rpx;
+	/* 图片宽度 */
+	height: 70rpx;
+	/* 图片高度，调整为所需高度 */
+}
+
+.divider_y {
+	width: 2rpx;
+	/* 竖线宽度 */
+	height: 40rpx;
+	/* 竖线高度，调整为需要的短竖线高度 */
+	background-color: #d0d0d0;
+	/* 竖线颜色，设置为与背景色相同 */
+	margin: 0 10rpx;
+	/* 竖线与图片及轮播文字之间的间距 */
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+
+.right-part {
+	width: 100%;
+	/* 根据需要调整宽度 */
+	height: 40rpx;
+	/* 根据需要调整高度 */
+	overflow: hidden;
+	/* 隐藏超出区域的内容 */
+	position: relative;
+	/* 为绝对定位的子元素提供定位上下文 */
+	margin-left: 20rpx;
+}
+
+.swiperBox {
+	width: 100%;
+	height: 100%;
+}
+
+.swipertext {
+	font-size: 26rpx;
+}
+
+.shop-rider-container {
+	width: 100%;
+	/* 根据需要调整宽度 */
+	height: 280rpx;
+	/* 根据需要调整高度 */
+	border-radius: 15rpx;
+	/* 圆角，形成椭圆形 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #f4d5ae;
+	/* 背景颜色，调整为需要的颜色 */
+}
+
+.shop-rider-top {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.shop-rider-top-left,
+.shop-rider-top-right {
+	flex: 1;
+	text-align: center;
+}
+
+.shop-rider-font {
+	display: flex;
+	flex: 3;
+	width: 100%;
+	height: 100%;
+}
+
+.shop-rider-font-left,
+.shop-rider-font-right {
+	flex: 1;
+	height: 100%;
+}
+
+.shop-rider-font-left image,
+.shop-rider-font-right image {
+	width: 90%;
+	height: 90%;
+	object-fit: cover;
+	border-radius: 10px;
+	/* 圆角半径 */
+}
+
+.shop-rider-font-left {
+	margin-top: 10rpx;
+	margin-left: 30rpx;
+	margin-right: 2rpx;
+	/* 调整左部分的右边距 */
+}
+
+.shop-rider-font-right {
+	margin-top: 10rpx;
+	margin-left: 30rpx;
+	margin-left: 2px;
+	/* 调整右部分的左边距 */
+}
+
+
+.divider_x {
+	width: 90%;
+	/* 竖线宽度 */
+	height: 1rpx;
+	/* 竖线高度，调整为需要的短竖线高度 */
+	background-color: #deab66;
+	/* 竖线颜色，设置为与背景色相同 */
+	margin: 0 10rpx;
+	/* 竖线与图片及轮播文字之间的间距 */
+	margin-left: 20rpx;
+	margin-right: 20rpx;
+}
+
+.shop-rider-top-left text,
+.shop-rider-top-right text {
+	font-size: 30rpx;
+	font-weight: bold;
+	/* 字体加粗 */
+}
+
+.shop-rider-top-left-image {
+	margin-left: 40rpx;
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.shop-rider-top-right-image {
+	margin-right: 40rpx;
+	width: 50rpx;
+	height: 50rpx;
+}
+
+.catagory-container {
+	width: 100%;
+	/* 根据需要调整宽度 */
+	height: 320rpx;
+	/* 根据需要调整高度 */
+	border-radius: 15rpx;
+	/* 圆角，形成椭圆形 */
+	display: flex;
+	background-color: #feffff;
+	/* 背景颜色，调整为需要的颜色 */
+}
+
+.catagory-container-swiper {
+	position: relative;
+	/* 为绝对定位的图标设置相对定位的父容器 */
+	width: 100%;
+
+}
+
+.chunk-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.chunk {
+	display: flex;
+	flex-direction: column;
+}
+
+.chunk-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.chunk-item {
+	width: 18%;
+	/* 为了留出间距，每个项占18%的宽度，可根据需要调整 */
+	padding: 10rpx;
+	margin-top: 12rpx;
+	text-align: center;
+	border-radius: 8rpx;
+	display: flex;
+	flex-direction: column;
+	/* 设置为列方向布局 */
+	justify-content: center;
+	align-items: center;
+}
+
+.chunk-item image {
+	width: 90rpx;
+	height: 90rpx;
+	margin-top: 10rpx;
+
+}
+
+.cake-mask {
+	width: 80rpx;
+	height: 70rpx;
+	-webkit-mask-image: url('/static/index_image/cake.png');
+	mask-image: url('/static/index_image/cake.png');
+	-webkit-mask-size: cover;
+	mask-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.chunk-item text {
+	margin-top: 20rpx;
+	font-size: 22rpx;
+}
+
+.special-container {
+	width: 100%;
+	/* 根据需要调整宽度 */
+	height: 350rpx;
+	/* 根据需要调整高度 */
+	border-radius: 15rpx;
+	/* 圆角，形成椭圆形 */
+	display: flex;
+	flex-direction: column;
+	/* 设置为列方向布局 */
+	justify-content: center;
+	align-items: center;
+	background-color: #feffff;
+	/* 背景颜色，调整为需要的颜色 */
+}
+
+.special-top {
+	width: 100%;
+	height: 90rpx;
+	border-radius: 15rpx;
+	/* 圆角，形成椭圆形 */
+	background: linear-gradient(to bottom, #f6dddd, #feffff);
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	/* 使子元素左右分布 */
+	align-items: center;
+	/* 垂直方向上居中对齐 */
+}
+
+.special-top-left {
+	margin-left: 15rpx;
+	flex: 7;
+}
+
+.special-top-right {
+	flex: 1;
+	text-align: end;
+	margin-right: 40rpx;
+
+}
+
+.special-font {
+	flex: 3;
+	display: flex;
+	justify-content: space-between;
+	/* 使子元素左右分布 */
+	align-items: center;
+	/* 垂直方向上居中对齐 */
+	position: relative;
+	/* 为绝对定位的图标设置相对定位的父容器 */
+	width: 100%;
+}
+
+.special-swiper-font-view {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-left: 20rpx;
+}
+
+.special-swiper-font-view-view {
+	display: flex;
+	flex-direction: column;
+}
+
+.special-swiper-font-view-view image {
+	width: 150rpx;
+	height: 150rpx;
+	border: 2px solid red;
+	border-radius: 15rpx;
+}
+
+.text-with-line {
+	margin-right: 15rpx;
+	font-size: 20rpx;
+	position: relative;
+	display: inline-block;
+}
+
+.text-with-line::before {
+	content: "";
+	position: absolute;
+	top: 60%;
+	left: -2rpx;
+	/* 让线比文字左侧多出 10px */
+	right: -2rpx;
+	/* 让线比文字右侧多出 10px */
+	height: 1px;
+	background-color: black;
+	/* 线的颜色 */
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+
+.horizontal-scroll-view {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
+.special-swiper-font-view {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.special-swiper-font-view-view {
+	display: flex;
+	flex-direction: column;
+	margin-right: 35rpx;
+	/* Reduce margin to bring items closer */
+	flex: 0 0 auto;
+	/* Prevent items from growing or shrinking */
+}
+
+.special-swiper-item-name {
+	font-size: 20rpx;
+	margin-top: 10rpx;
+	text-align: center;
+	/* Center text horizontally */
+	overflow: hidden;
+	/* Hide overflow text */
+	text-overflow: ellipsis;
+	/* Show ellipsis for overflow text */
+	white-space: nowrap;
+	/* Prevent text from wrapping to the next line */
+}
+
+.near-shop-text-container {
+	position: relative;
+	display: inline-block;
+	/* Ensure the container fits the text content */
+	text-align: center;
+	/* Center align the line */
+}
+
+.near-shop-text-container::after {
+	content: "";
+	position: absolute;
+	left: 55%;
+	/* Center horizontally */
+	bottom: -10rpx;
+	/* Adjust the distance from the text */
+	transform: translateX(-50%);
+	/* Center the line */
+	width: 70%;
+	/* Make the line shorter */
+	height: 8rpx;
+	/* Thickness of the line */
+	background-color: #f0c75d;
+	/* Line color */
+	border-radius: 2rpx;
+}
+
+.near-shop-container {
+	width: 100%;
+	/* 根据需要调整宽度 */
+	height: 460rpx;
+	/* 根据需要调整高度 */
+	border-radius: 15rpx;
+	/* 圆角，形成椭圆形 */
+	display: flex;
+	background-color: #feffff;
+	/* 背景颜色，调整为需要的颜色 */
+    flex-direction: column;
+	
+}
+
+.no-more {
+    text-align: center; /* Center the text */
+    margin-top: 20rpx; /* Add some margin from the last item */
+    padding: 10rpx; /* Add some padding */
+    color: #888; /* Grey color for the text */
+	height: 250rpx;
+}
+.near-shop-container-top{
+	display: flex;
+	justify-content: space-between;
+}
+.near-shop-container-top image{
+	width: 150rpx;
+	height: 150rpx;
+	margin: 20rpx;
+	border-radius: 15rpx;
+}
+.near-shop-container-top-left{
+	flex: 1;
+	margin-top: 20rpx;
+	margin-left: 20rpx;
+}
+.near-shop-container-top-left-text-container {
+	flex: none;
+  background-color: #f8eed8; /* 背景色 */
+  border-radius: 10rpx; /* 圆角 */
+  padding: 15rpx; /* 内边距，确保文字不紧贴边缘 */
+  overflow: hidden; /* 隐藏超出部分 */
+  display: inline-flex; /* 使用 inline-flex 布局，宽度随内容调整 */
+  align-items: center; /* 垂直居中对齐 */
+  max-width: 450rpx; /* 根据需要调整容器最大宽度 */
+  height: 25rpx; /* 高度固定 */
+  margin-top: 8rpx;
+}
+
+.near-shop-container-top-left-text-overflow {
+  color: #d8ba70; /* 文字颜色 */
+  font-size: 20rpx; /* 字体大小 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 隐藏超出部分 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+}
+
+.text-container {
+  
+}
+
+.text-overflow {
+  color: #d8ba70; /* 文字颜色 */
+  font-size: 20rpx; /* 字体大小 */
+  white-space: nowrap; /* 不换行 */
+  overflow: hidden; /* 隐藏超出部分 */
+  text-overflow: ellipsis; /* 超出部分显示省略号 */
+}
+.bordered-view{
+	border: 1rpx solid #a05f5f; /* 红色边框，2rpx 宽度 */
+	border-radius: 6rpx; /* 圆角效果 */
+	margin-top: 5rpx;
+	padding: 1rpx;
+	display: inline-flex; /* 使用 inline-flex 布局，使宽度随内容调整 */
+	align-items: center; /* 垂直方向居中对齐 */
+}
+
+
+
+
+
+
+.near-shop-container-font {
+	flex: 2;
+	display: flex;
+	justify-content: space-between;
+	/* 使子元素左右分布 */
+	align-items: center;
+	/* 垂直方向上居中对齐 */
+	position: relative;
+	/* 为绝对定位的图标设置相对定位的父容器 */
+	width: 100%;
+}
+
+.near-shop-swiper-font-view {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-left: 20rpx;
+}
+
+.near-shop-swiper-font-view-view {
+	display: flex;
+	flex-direction: column;
+}
+
+.near-shop-swiper-font-view-view image {
+	width: 150rpx;
+	height: 150rpx;
+	border: 2px solid red;
+	border-radius: 15rpx;
+}
+
+.text-with-line {
+	margin-right: 15rpx;
+	font-size: 20rpx;
+	position: relative;
+	display: inline-block;
+}
+
+.text-with-line::before {
+	content: "";
+	position: absolute;
+	top: 60%;
+	left: -2rpx;
+	/* 让线比文字左侧多出 10px */
+	right: -2rpx;
+	/* 让线比文字右侧多出 10px */
+	height: 1px;
+	background-color: black;
+	/* 线的颜色 */
+	transform: translateY(-50%);
+	pointer-events: none;
+}
+
+
+.near-shop-scroll-view {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
+.near-shop-swiper-font-view {
+	display: flex;
+	flex-direction: row;
+
+}
+
+.near-shop-swiper-font-view-view {
+	display: flex;
+	flex-direction: column;
+	margin-right: 35rpx;
+	/* Reduce margin to bring items closer */
+	flex: 0 0 auto;
+	/* Prevent items from growing or shrinking */
+}
+
+.near-shop-swiper-item-name {
+	font-size: 20rpx;
+	margin-top: 10rpx;
+	text-align: center;
+	/* Center text horizontally */
+	overflow: hidden;
+	/* Hide overflow text */
+	text-overflow: ellipsis;
+	/* Show ellipsis for overflow text */
+	white-space: nowrap;
+	/* Prevent text from wrapping to the next line */
+}
+
+.near-shop-text-with-border{
+	border: 2rpx solid #f0c14b; /* 黄色边框颜色 */
+	  border-radius: 20rpx 0 20rpx 0; /* 左上角和右下角为圆角 */
+	  padding: 5rpx; /* 内边距，确保文本不紧贴边框 */
+	  display: inline-block; /* 确保边框包围文本 */
+	  margin: 2rpx; /* 可选，调整与其他元素的间距 */
+	  background-color: #eecb5c;
+	  font-size: 18rpx;
+	  margin-right: 15rpx;
+}
+
+.near-shop-divider_y{
+	width: 2rpx;
+	/* 竖线宽度 */
+	height: 25rpx;
+	/* 竖线高度，调整为需要的短竖线高度 */
+	background-color: #d0d0d0;
+	/* 竖线颜色，设置为与背景色相同 */
+	margin: 0 10rpx;
+	/* 竖线与图片及轮播文字之间的间距 */
+	margin-left: 10rpx;
+	margin-right: 10rpx;
+}
